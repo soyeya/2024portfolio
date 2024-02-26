@@ -1,0 +1,368 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{margin:0; padding:0;}
+body,html{margin:0;}
+ul li{list-style:none;}
+div,h1,h2,h3,h4,h5,p{margin:0;}
+p,a{  font-family: "Open Sans", sans-serif; }
+a{text-decoration: none;}
+a:visited{color:#333;}
+
+
+#portfolioWrap{
+
+    width: 100%;
+    padding: 10px 0px;
+    margin:0 auto;
+    background-color: #fff;
+
+}
+
+#portfolioWrap .mainContainer{
+
+   margin:0 auto;
+   padding: 0px 100px;
+
+}
+
+
+.title{
+
+   color:#000;
+   font-style: italic;
+   font-weight: 900;
+   font-size: 1.5em;
+   padding: 100px 0px 10px 100px;
+   
+}
+
+#portfolioWrap .mainContainer .introContent{
+
+   width: 100%;
+   padding: 100px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+#portfolioWrap .mainContainer .introContent ul{
+
+   margin:0 auto;
+
+}
+
+#portfolioWrap .mainContainer .introContent ul li{
+
+   width: 100%;
+   padding: 10px 0px;
+   margin:0 auto;
+
+}
+
+#portfolioWrap .mainContainer .introContent ul li span{
+
+    font-size: 5em;
+    font-family: "DM Serif Display", serif;
+    padding: 30px 0px;
+    font-weight: 900;
+
+}
+
+#portfolioWrap .mainContainer .introContent ul li span em{
+
+   font-style: normal;
+   opacity: 0;
+}
+
+#portfolioWrap .mainContainer .introContent ul li span em.active{
+
+   opacity: 1;
+}
+
+#portfolioWrap .mainContainer .introContent ul li p{
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: left;
+}
+
+#portfolioWrap .mainContainer .introContent ul li p strong{
+
+}
+
+
+#portfolioWrap .reactContainer {
+
+   margin:0 auto;
+   padding: 50px 100px;
+
+}
+
+
+.reactContainer .projectContent{
+
+   margin:0 auto;
+   transform: translateY(100px);
+   opacity: 0;
+
+
+}
+
+.reactContainer .projectContent.up{
+ 
+   transform: translateY(0px);
+   transition: 800ms;
+   opacity: 1;
+}
+
+.reactContainer .projectContent ul{
+
+   padding: 20px 100px;
+}
+
+.reactContainer .projectContent ul span{
+
+   padding: 10px 15px;
+   margin:20px 0px;
+   display:inline-block;
+   background-color: #000;
+   color:#ffc000;
+   font-size: 1.3em;
+   font-weight: 800;
+}
+
+.reactContainer .projectContent ul li{
+
+   padding: 5px 0px;
+   margin:10px 0px 5px 0px;
+
+}
+
+.reactContainer .projectContent ul li p{
+
+   font-size: 1.2em;
+   font-weight: 300;
+}
+
+.reactContainer .projectContent ul li p strong{
+
+   padding: 0px 5px;
+}
+
+.reactContainer .projectContent ul li img{
+
+   height:500px;
+   display: block;
+   margin:0 auto;
+   
+}
+
+.reactContainer .projectContent .imgscroller{
+
+   position: relative;
+   width: 90%;
+   padding: 80px 0px;
+   margin:0 auto;
+   overflow: hidden;
+}
+
+.reactContainer .projectContent .imgscroller strong{
+
+   font-size: 1.2em;
+   padding:0px 40px;
+
+}
+
+.reactContainer .projectContent .imgscroller ul{
+
+   width:100%;
+   height: 500px;
+   padding: 30px 0px;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+
+}
+
+.reactContainer .projectContent .site{
+
+   color:#000;
+   text-transform: uppercase;
+   padding: 0px 10px;
+}
+
+.reactContainer .projectContent .site:hover{
+
+   color:#eaeaea;
+}
+
+.reactContainer .projectContent .imgscroller ul li{
+
+   margin-right:20px;
+
+}
+
+
+.reactContainer .projectContent .imgscroller ul li.move{
+
+   transform: translateX(-500px);
+   transition: transform 800ms;
+}
+
+.reactContainer .projectContent .imgscroller ul li img{
+
+   height:500px;
+
+}
+
+.reactContainer .projectContent .imgscroller .btn{
+
+   position: absolute;
+   right:30px;
+   top:60px;
+   z-index:99;
+   cursor: pointer;
+
+}
+
+.reactContainer .projectContent .imgscroller .btn img{
+
+   width: 30px;
+   height :30px;
+}
+
+
+.websiteContainer{
+
+   margin:0 auto;
+   padding: 0px 100px;
+
+}
+
+.websiteContainer .websiteSlider{
+
+   width: 90%;
+   padding: 20px 0px;
+   margin:0 auto;
+   overflow: hidden;
+   position: relative;
+}
+
+.websiteContainer .websiteSlider span{
+
+   padding: 0px 40px 50px;
+   display:inline-block;
+   font-size: 1.3em;
+
+
+
+}
+
+.websiteContainer .websiteSlider ul{
+
+   width: 90%;
+   height:600px;
+   margin:0 auto;
+   display: flex;
+   align-items: center;
+
+}
+
+.websiteContainer .websiteSlider ul li{
+
+   margin-right:30px;
+   width: 600px;
+
+}
+
+.websiteContainer .websiteSlider ul li.active{
+
+   transform: translateX(-600px);
+   transition: transform 800ms;
+
+}
+.websiteContainer .websiteSlider ul li a{
+
+   background-color: rgba(0,0,0,.9);
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+
+}
+
+.websiteContainer .websiteSlider ul li a span{
+
+   position: absolute;
+   color:#fff;
+   opacity: 0;
+}
+
+.websiteContainer .websiteSlider ul li a span em{
+
+   padding: 0px 10px;
+}
+
+.websiteContainer .websiteSlider ul li a img{
+
+   height:600px;
+   opacity: 0.5;
+   position: relative;
+}
+
+.websiteContainer .websiteSlider ul li a:hover img{
+
+   opacity: 0.8;
+   transform: scale(1.05);
+   transition: transform 800ms;
+   
+}
+
+.websiteContainer .websiteSlider ul li a:hover span{
+
+   opacity: 1;
+}
+
+.websiteContainer .websiteSlider .btn{
+
+   position: absolute;
+   right:30px;
+   top:0px;
+   z-index:99;
+   cursor: pointer;
+
+}
+
+.websiteContainer .websiteSlider .btn img{
+
+   width: 30px;
+   height :30px;
+}
+
+.closing{
+
+   padding: 400px 100px;
+   margin:0 auto;
+   transform: translateY(100px);
+   opacity: 0;
+
+}
+
+.closing h3{
+
+   font-size: 2em;
+   text-align: center;
+   font-family: "DM Serif Display", serif;
+   font-weight: 900;
+
+}
+
+.closing.up{
+
+   transform: translateY(0px);
+   transition: 800ms;
+   opacity: 1;
+}
